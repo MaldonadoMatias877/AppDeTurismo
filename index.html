@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust - Descubre el Mundo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-earth-americas"></i> Wanderlust
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item dropdown">
+            <a href="#destinos" class="nav-link">Destinos <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Europa</a></li>
+              <li><a href="#">Asia</a></li>
+              <li><a href="#">América</a></li>
+              <li><a href="#">África</a></li>
+              <li><a href="#">Oceanía</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#agencias" class="nav-link">Agencias <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Agencia Aventura</a></li>
+              <li><a href="#">Agencia Relax</a></li>
+              <li><a href="#">Agencia Cultural</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#precios" class="nav-link">Precios <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Económico</a></li>
+              <li><a href="#">Estándar</a></li>
+              <li><a href="#">Premium</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="https://cdn.pixabay.com/video/2024/02/14/199772-912702699_large.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Descubrí tu próximo destino</h1>
+      <p class="hero-subtitle">Explorá los lugares más increíbles del mundo con nosotros</p>
+      <a href="#destinos" class="btn btn-primary">Ver Destinos</a>
+    </div>
+  </section>
+
+  <!-- Destinos Destacados -->
+  <section id="destinos" class="destinos section">
+    <div class="container">
+      <h2 class="section-title">Destinos Destacados</h2>
+      <p class="section-subtitle">Los lugares más populares que no te podés perder</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="París, Francia">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">París, Francia</h3>
+            <p class="card-text">La ciudad del amor te espera con sus icónicos monumentos y su encantadora gastronomía.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$1,200</strong></span>
+              <a href="#" class="btn btn-secondary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600" alt="Tokio, Japón">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Tokio, Japón</h3>
+            <p class="card-text">Una fusión única entre tradición milenaria y tecnología de vanguardia.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$1,800</strong></span>
+              <a href="#" class="btn btn-secondary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600" alt="Bali, Indonesia">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Bali, Indonesia</h3>
+            <p class="card-text">Playas paradisíacas, templos sagrados y una naturaleza exuberante te esperan.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$1,500</strong></span>
+              <a href="#" class="btn btn-secondary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600" alt="Roma, Italia">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Roma, Italia</h3>
+            <p class="card-text">Historia, arte y la mejor comida del Mediterráneo en una sola ciudad.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$1,100</strong></span>
+              <a href="#" class="btn btn-secondary">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contador Animado -->
+  <section class="contador section">
+    <div class="container contador-grid">
+      <div class="contador-item">
+        <div class="contador-num">
+          <span class="num num1">5000</span><span class="suffix">+</span>
+        </div>
+        <p class="contador-label">Viajeros Felices</p>
+      </div>
+      <div class="contador-item">
+        <div class="contador-num">
+          <span class="num num2">120</span><span class="suffix">+</span>
+        </div>
+        <p class="contador-label">Destinos Disponibles</p>
+      </div>
+      <div class="contador-item">
+        <div class="contador-num">
+          <span class="num num3">45</span><span class="suffix">+</span>
+        </div>
+        <p class="contador-label">Países</p>
+      </div>
+      <div class="contador-item">
+        <div class="contador-num">
+          <span class="num num4">15</span><span class="suffix">+</span>
+        </div>
+        <p class="contador-label">Años de Experiencia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios Carrusel -->
+  <section class="testimonios section">
+    <div class="container">
+      <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+      <p class="section-subtitle">Experiencias reales de personas que confiaron en nosotros</p>
+      <div class="carrusel">
+        <div class="carrusel-track">
+          <div class="testimonio">
+            <div class="testimonio-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonio-text">"Una experiencia increíble. La organización fue impecable y los destinos superaron todas mis expectativas. ¡Volvería a viajar con Wanderlust sin dudarlo!"</p>
+            <div class="testimonio-author">
+              <div class="testimonio-avatar">ML</div>
+              <div class="testimonio-info">
+                <h4 class="testimonio-nombre">María López</h4>
+                <span class="testimonio-viaje">Viaje a París - 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio">
+            <div class="testimonio-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonio-text">"El viaje a Tokio fue soñado. Todo perfectamente coordinado, desde los vuelos hasta los hoteles. El equipo de Wanderlust estuvo siempre disponible para cualquier consulta."</p>
+            <div class="testimonio-author">
+              <div class="testimonio-avatar">CG</div>
+              <div class="testimonio-info">
+                <h4 class="testimonio-nombre">Carlos García</h4>
+                <span class="testimonio-viaje">Viaje a Tokio - 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio">
+            <div class="testimonio-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="testimonio-text">"Bali fue un sueño hecho realidad. La tranquilidad de los lugares, la amabilidad de la gente y la excelente organización hicieron de este viaje algo inolvidable."</p>
+            <div class="testimonio-author">
+              <div class="testimonio-avatar">AR</div>
+              <div class="testimonio-info">
+                <h4 class="testimonio-nombre">Ana Rodríguez</h4>
+                <span class="testimonio-viaje">Viaje a Bali - 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonio">
+            <div class="testimonio-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonio-text">"Roma me dejó sin palabras. Cada rincón tiene historia, y la comida es espectacular. Wanderlust hizo que todo sea mucho más fácil y placentero."</p>
+            <div class="testimonio-author">
+              <div class="testimonio-avatar">JM</div>
+              <div class="testimonio-info">
+                <h4 class="testimonio-nombre">Juan Martínez</h4>
+                <span class="testimonio-viaje">Viaje a Roma - 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Formulario de contacto -->
+      <div class="footer-col">
+        <h3 class="footer-title">Contactanos</h3>
+        <form class="footer-form">
+          <input type="text" placeholder="Tu nombre" required class="form-input">
+          <input type="email" placeholder="Tu email" required class="form-input">
+          <textarea placeholder="Tu mensaje" rows="3" required class="form-input form-textarea"></textarea>
+          <button type="submit" class="btn btn-primary btn-full">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="footer-col">
+        <h3 class="footer-title">Enlaces Útiles</h3>
+        <ul class="footer-links">
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Destinos</a></li>
+          <li><a href="#">Agencias</a></li>
+          <li><a href="#">Precios</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="footer-col">
+        <h3 class="footer-title">Seguinos</h3>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-contact">
+          <p><i class="fa-solid fa-envelope"></i> info@wanderlust.com</p>
+          <p><i class="fa-solid fa-phone"></i> +54 11 1234-5678</p>
+          <p><i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina</p>
+        </div>
+      </div>
+
+      <!-- Mapa -->
+      <div class="footer-col footer-map">
+        <h3 class="footer-title">Nuestra Ubicación</h3>
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-58.45%2C-34.65%2C-58.35%2C-34.58&layer=mapnik&marker=-34.6131%2C-58.3772"
+          width="100%"
+          height="250"
+          style="border:0; border-radius: 8px;"
+          allowfullscreen
+          loading="lazy"
+          title="Mapa de ubicación">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wanderlust. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menu móvil
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    // Cerrar menú al hacer click en un link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
